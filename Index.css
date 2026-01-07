@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1f2d3d;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    position: relative;
+}
+
+nav a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+}
+.hero-left {
+    width: 50%;
+    padding: 180px 80px 80px;
+    background: #ffffff;
+}
+
+.hero-left h5 {
+    color: #1abc9c;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.hero-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-left h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.hero-left p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background: #1abc9c;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.hero-right {
+    width: 50%;
+    background: #1abc9c;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.hero-right img {
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.socials {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.socials a {
+    color: #999;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    nav a {
+        color: #1f2d3d;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+        clip-path: none;
+    }
+
+    .hero-left {
+        padding: 140px 40px 60px;
+    }
+
+    .hero-right {
+        padding: 60px 0;
+    }
+
+    .socials {
+        display: none;
+    }
+}
