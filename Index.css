@@ -26,10 +26,21 @@ body::before {
     pointer-events: none;
     z-index: 0;
     background-image:
-            radial-gradient(circle at center, rgba(247, 198, 0, 0.20), transparent 55%),
-            repeating-radial-gradient(circle at center, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.035) 1px, transparent 1px, transparent 36px);
-    background-blend-mode: soft-light;
+            radial-gradient(
+                    circle at 50% 35%,
+                    rgba(247, 198, 0, 0.28),
+                    transparent 60%
+            ),
+            repeating-radial-gradient(
+                    circle,
+                    rgba(255, 255, 255, 0.06),
+                    rgba(255, 255, 255, 0.06) 1px,
+                    transparent 1px,
+                    transparent 32px
+            );
+    background-blend-mode: overlay;
 }
+
 
 a {
     color: inherit;
