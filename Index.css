@@ -1,9 +1,9 @@
 :root {
-    --bg-dark: #0a0f1f;      /* diep donkerblauw */
-    --bg-light: #11172e;     /* iets lichtere navy */
-    --accent: #f7c600;       /* krachtig geel */
+    --bg-dark: #0a0f1f;
+    --bg-light: #11172e;
+    --accent: #f7c600;
     --text-main: #ffffff;
-    --text-muted: #9aa4c7;   /* koel blauwgrijs */
+    --text-muted: #9aa4c7;
 }
 
 * {
