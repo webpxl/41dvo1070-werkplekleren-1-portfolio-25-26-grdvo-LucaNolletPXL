@@ -6,7 +6,6 @@
     --text-muted: #9aa4c7;   /* koel blauwgrijs */
 }
 
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +36,6 @@ a {
     text-decoration: none;
 }
 
-/* NAVIGATION */
 header {
     padding: 1.5rem 3rem;
     position: sticky;
@@ -84,7 +82,7 @@ nav {
     width: 100%;
 }
 
-/* HERO */
+
 .titel {
     min-height: 90vh;
     display: flex;
@@ -113,7 +111,6 @@ nav {
     align-items: center;
 }
 
-/* Vorm */
 .vorm {
     width: 420px;
     height: 520px;
@@ -123,7 +120,7 @@ nav {
     position: relative;
 }
 
-/* Vorm foto */
+
 .vorm img {
     width: 100%;
     height: 100%;
@@ -132,7 +129,7 @@ nav {
     background: #0a0f1f;
 }
 
-/* BUTTON */
+
 .btn {
     padding: 0.9rem 2.2rem;
     border: 2px solid var(--accent);
@@ -150,7 +147,6 @@ nav {
     color: #0a0f1f;
 }
 
-/* SECTIONS */
 section {
     padding: 6rem 3rem;
     max-width: 1200px;
@@ -164,7 +160,6 @@ section h2 {
     text-transform: uppercase;
 }
 
-/* ABOUT LAYOUT */
 .over-mij-inhoud {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -172,21 +167,19 @@ section h2 {
     align-items: center;
 }
 
-/* TEKST */
+
 .over-mij-tekst p {
     max-width: 600px;
     color: var(--text-muted);
     font-size: 1.05rem;
 }
 
-/* DRUPPEL WRAPPER */
 .over-mij-afbeelding-div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* DRUPPEL VORM */
 .over-mij-afbeelding {
     width: 280px;
     height: 320px;
@@ -197,7 +190,7 @@ section h2 {
     animation: float 6s ease-in-out infinite;
 }
 
-/* INNER IMAGE */
+
 .over-mij-afbeelding img {
     width: 100%;
     height: 100%;
@@ -206,14 +199,81 @@ section h2 {
     background-color: var(--bg-light);
 }
 
-/* FLOAT ANIMATION */
+
 @keyframes float {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
 
-/* PROJECTS SLIDER */
+#tijdlijn {
+    padding: 6rem 3rem;
+}
+
+#tijdlijn h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.tijdlijn-container {
+    position: relative;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    border-left: 4px solid var(--accent); /* verticale lijn */
+}
+
+.tijdlijn-item {
+    position: relative;
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.tijdlijn-punt {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    border: 2px solid var(--bg-dark);
+}
+
+.tijdlijn-infoKaart {
+    background: linear-gradient(180deg, var(--bg-light), var(--bg-dark));
+    border: 1px solid rgba(247,198,0,0.2);
+    border-radius: 12px;
+    padding: 1rem;
+    max-width: 500px;
+    color: var(--text-main);
+}
+
+
+.tijdlijn-infoKaart:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.55);
+}
+
+.tijdlijn-infoKaart h3 {
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+}
+
+.tijdlijn-infoKaart p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.tijdlijn-infoKaart img {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 .projecten-wrapper {
     overflow: hidden;
     width: 100%;
@@ -252,7 +312,6 @@ section h2 {
     object-fit: contain;
 }
 
-/* SLIDER ARROWS */
 #prev, #next {
     cursor: pointer;
     background-color: var(--bg-light);
@@ -284,7 +343,7 @@ section h2 {
     gap: 15px;
 }
 
-/* PROJECT TITLES & TEXT */
+
 .project h3 {
     margin-bottom: 0.5rem;
     color: var(--text-main);
@@ -295,12 +354,11 @@ section h2 {
     font-size: 0.95rem;
 }
 
-/* CONTACT */
+
 #contact p {
     color: var(--text-muted);
 }
 
-/* FOOTER */
 footer {
     padding: 3rem;
     text-align: center;
@@ -308,7 +366,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
     header,
     section,
