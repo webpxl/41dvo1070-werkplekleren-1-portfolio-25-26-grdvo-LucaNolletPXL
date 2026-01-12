@@ -36,7 +36,7 @@ const tijdlijnData = [
     },
     {
         year: '2026',
-        text: 'Portfolio website gemaakt voor werkplekleren 1! Eerste professionele webproject dat ik zelf gemaakt heb.',
+        text: 'Portfolio website gemaakt voor het vak werkplekleren 1.Eerste professionele webproject dat ik zelf gemaakt heb.',
         image: null
     }
 ];
