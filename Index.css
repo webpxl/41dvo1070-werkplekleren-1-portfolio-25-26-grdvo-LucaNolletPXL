@@ -12,7 +12,6 @@
     box-sizing: border-box;
 }
 
-/* 🔽 TOEGEVOEGD (nodig voor correcte layering) */
 body {
     position: relative;
     font-family: 'Inter', sans-serif;
@@ -21,7 +20,6 @@ body {
     line-height: 1.6;
 }
 
-/* 🔽 ACHTERGROND-GLOED (blijft exact hetzelfde) */
 body::before {
     content: "";
     position: fixed;
@@ -44,7 +42,6 @@ body::before {
     background-blend-mode: overlay;
 }
 
-/* 🔽 TOEGEVOEGD: alle content boven de gloed */
 body > * {
     position: relative;
     z-index: 1;
@@ -176,7 +173,6 @@ section h2 {
     text-transform: uppercase;
 }
 
-/* ===== OVER MIJ ===== */
 
 .over-mij-inhoud {
     display: grid;
@@ -237,7 +233,6 @@ section h2 {
     100% { transform: translateY(0); }
 }
 
-/* (rest van je CSS ongewijzigd) */
 
 #tijdlijn {
     padding: 6rem 3rem;

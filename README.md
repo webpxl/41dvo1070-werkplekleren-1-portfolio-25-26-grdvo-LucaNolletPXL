@@ -1,7 +1,41 @@
-https://www.magicpattern.design/tools/css-backgrounds - deze site heb ik gebruikt voor een CSS background te vinden.
+# Portfolio – Luca Nollet
 
-Ik heb voor het maken van de code gebruik gemaakt van AI om me te ondersteunen. 
-Ik ben zelf nog niet zo zeer goed in programmeren dus schrijf ik zelf de basis onderdelen en gebruik ik AI om de code-onderdelen te verbinden of verbeteren.
+## Algemene informatie
+Dit project is een persoonlijke portfolio website gemaakt in het kader van mijn opleiding Digitale Vormgeving aan Hogeschool PXL.
 
-Via AI heb ik ook specialere items kunnen toevoegen zoals de druppel afbeeldingen die ter plekke wat beweegt.
+De website geeft een overzicht van wie ik ben, mijn interesses, mijn opleiding en enkele projecten die ik reeds heb gemaakt.
+
+## Doel van het project
+Het doel van deze website is:
+- mezelf voorstellen
+- mijn projecten tonen
+
+Dit project is bedoeld als leerproces  website.
+
+## Gebruik van externe bronnen
+Voor dit project heb ik gebruik gemaakt van externe bronnen voor inspiratie en ondersteuning.
+
+### CSS achtergrond
+Voor het vinden van een geschikte CSS-achtergrond heb ik gebruik gemaakt van de volgende website:
+
+- https://www.magicpattern.design/tools/css-backgrounds
+
+Deze site werd gebruikt om een achtergrondstijl te vinden die daarna werd aangepast aan mijn eigen ontwerp.
+
+---
+
+## Gebruik van AI
+Bij het maken van deze website heb ik gebruik gemaakt van AI als ondersteuning.
+
+Ik ben zelf nog niet zeer sterk in programmeren. Daarom:
+- schrijf ik zelf de basisstructuur van mijn HTML en CSS
+- gebruik ik AI om code-onderdelen te verbeteren of met elkaar te verbinden
+- gebruik ik AI om oplossingen te vinden voor lay-outproblemen
+
+Via AI heb ik ook meer geavanceerde elementen kunnen toevoegen, zoals:
+- bewegende vormen
+- animaties (bv. lichte beweging van afbeeldingen)
+
+Ik heb wel alle code aangepast en bekeken zodat ik zeker begrijp wat er staat.
+
 

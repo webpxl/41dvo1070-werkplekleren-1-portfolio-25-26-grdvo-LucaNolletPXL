@@ -1,0 +1,170 @@
+/* ===== LEERDOELEN PAGINA ===== */
+:root {
+    --bg-dark: #0a0f1f;
+    --bg-light: #11172e;
+    --accent: #f7c600;
+    --text-main: #ffffff;
+    --text-muted: #9aa4c7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+            radial-gradient(
+                    circle at 50% 35%,
+                    rgba(247, 198, 0, 0.28),
+                    transparent 60%
+            ),
+            repeating-radial-gradient(
+                    circle,
+                    rgba(255, 255, 255, 0.06),
+                    rgba(255, 255, 255, 0.06) 1px,
+                    transparent 1px,
+                    transparent 32px
+            );
+    background-blend-mode: overlay;
+}
+
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+body {
+    position: relative;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+}
+
+/* Gele gloed + subtiele textuur */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+            radial-gradient(
+                    circle at 50% 35%,
+                    rgba(247, 198, 0, 0.28),
+                    transparent 60%
+            ),
+            repeating-radial-gradient(
+                    circle,
+                    rgba(255, 255, 255, 0.06),
+                    rgba(255, 255, 255, 0.06) 1px,
+                    transparent 1px,
+                    transparent 32px
+            );
+    background-blend-mode: overlay;
+}
+
+/* Zorgt dat ALLE content boven de achtergrond zit */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+.leerdoelen {
+    max-width: 900px;
+    margin: 6rem auto;
+    padding: 0 3rem;
+    line-height: 1.7;
+}
+
+.leerdoelen h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.leerdoelen > p {
+    color: var(--text-muted);
+    max-width: 750px;
+    margin-bottom: 4rem;
+}
+
+/* Rollen */
+
+.leerdoelen h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    position: relative;
+}
+
+.leerdoelen h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent);
+    margin-top: 0.5rem;
+}
+
+/* Tekstblokken */
+
+.leerdoelen p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    max-width: 800px;
+}
+
+/* Samenvatting */
+
+.leerdoelen .samenvatting {
+    margin-top: 5rem;
+    padding: 2rem;
+    border-radius: 12px;
+    background: linear-gradient(180deg, var(--bg-light), var(--bg-dark));
+    border: 1px solid rgba(247, 198, 0, 0.15);
+}
+
+.leerdoelen .samenvatting h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.leerdoelen .samenvatting p {
+    color: var(--text-main);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .leerdoelen {
+        padding: 0 1.5rem;
+    }
+
+    .leerdoelen h1 {
+        font-size: 2.4rem;
+    }
+
+    .leerdoelen h2 {
+        font-size: 1.8rem;
+    }
+}
