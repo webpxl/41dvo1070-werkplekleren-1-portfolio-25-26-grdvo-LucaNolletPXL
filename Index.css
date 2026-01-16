@@ -12,13 +12,16 @@
     box-sizing: border-box;
 }
 
+/* 🔽 TOEGEVOEGD (nodig voor correcte layering) */
 body {
+    position: relative;
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-dark);
     color: var(--text-main);
     line-height: 1.6;
 }
 
+/* 🔽 ACHTERGROND-GLOED (blijft exact hetzelfde) */
 body::before {
     content: "";
     position: fixed;
@@ -41,6 +44,11 @@ body::before {
     background-blend-mode: overlay;
 }
 
+/* 🔽 TOEGEVOEGD: alle content boven de gloed */
+body > * {
+    position: relative;
+    z-index: 1;
+}
 
 a {
     color: inherit;
@@ -93,7 +101,6 @@ nav {
     width: 100%;
 }
 
-
 .titel {
     min-height: 90vh;
     display: flex;
@@ -131,7 +138,6 @@ nav {
     position: relative;
 }
 
-
 .vorm img {
     width: 100%;
     height: 100%;
@@ -139,7 +145,6 @@ nav {
     clip-path: inherit;
     background: #0a0f1f;
 }
-
 
 .btn {
     padding: 0.9rem 2.2rem;
@@ -171,24 +176,41 @@ section h2 {
     text-transform: uppercase;
 }
 
+/* ===== OVER MIJ ===== */
+
 .over-mij-inhoud {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
+    grid-template-areas:
+        "tekst foto"
+        "kaart foto";
     gap: 4rem;
     align-items: center;
 }
 
+.over-mij-tekst {
+    grid-area: tekst;
+}
+
+.over-mij-kaart {
+    grid-area: kaart;
+    width: 100%;
+    height: 300px;
+    border-radius: 1rem;
+    background: white;
+}
+
+.over-mij-afbeelding-div {
+    grid-area: foto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .over-mij-tekst p {
     max-width: 600px;
     color: var(--text-muted);
     font-size: 1.05rem;
-}
-
-.over-mij-afbeelding-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .over-mij-afbeelding {
@@ -201,7 +223,6 @@ section h2 {
     animation: float 6s ease-in-out infinite;
 }
 
-
 .over-mij-afbeelding img {
     width: 100%;
     height: 100%;
@@ -210,12 +231,13 @@ section h2 {
     background-color: var(--bg-light);
 }
 
-
 @keyframes float {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
+
+/* (rest van je CSS ongewijzigd) */
 
 #tijdlijn {
     padding: 6rem 3rem;
@@ -232,7 +254,7 @@ section h2 {
     position: relative;
     margin-left: 2rem;
     padding-left: 2rem;
-    border-left: 4px solid var(--accent); /* verticale lijn */
+    border-left: 4px solid var(--accent);
 }
 
 .tijdlijn-item {
@@ -260,12 +282,6 @@ section h2 {
     padding: 1rem;
     max-width: 500px;
     color: var(--text-main);
-}
-
-
-.tijdlijn-infoKaart:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 35px rgba(0,0,0,0.55);
 }
 
 .tijdlijn-infoKaart h3 {
@@ -359,6 +375,9 @@ section h2 {
     margin-bottom: 0.5rem;
     color: var(--text-main);
 }
+.project h4{
+    color: var(--accent);
+}
 
 .project p {
     color: var(--text-muted);
@@ -393,13 +412,11 @@ footer {
     .Titel {
         min-height: 80vh;
     }
-
     .over-mij-inhoud {
         grid-template-columns: 1fr;
         gap: 2.5rem;
         text-align: center;
     }
-
     .about-text p {
         margin: 0 auto;
     }

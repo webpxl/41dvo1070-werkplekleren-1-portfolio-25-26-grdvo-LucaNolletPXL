@@ -24,20 +24,20 @@ nextBtn.addEventListener('click', () => {
 
 const tijdlijnData = [
     {
-        year: '2023',
-        text: 'In de opleiding leerkracht informatica Secundair Onderwijs, hadden we een project rond grafisch design.' +
-            'Hier heb ik was basis geleerd en het boeide me direct. We moesten een eigen fictief festival ontwikkelen.' +
+        jaar: '2023',
+        tekst: 'In de opleiding leerkracht informatica Secundair Onderwijs, hadden we een project rond grafisch design. ' +
+            'Hier heb ik was basis geleerd en het boeide me direct. We moesten een eigen fictief festival ontwikkelen.  ' +
             'Hier zie je een foto van het logo dat ik ontworpen heb.',
-        image: 'Assets/logo-GrafischPakket.png'
+        afbeelding: 'Assets/logo-GrafischPakket.png'
     }, {
-        year: '2025',
-        text: 'Start digitale vormgeving aan PXL Hasselt. Eerste echte kennismaking met coderen en designen.',
-        image: null
+        jaar: '2025',
+        tekst: 'Start digitale vormgeving aan PXL Hasselt. Eerste echte kennismaking met coderen en designen.',
+        afbeelding: null
     },
     {
-        year: '2026',
-        text: 'Portfolio website gemaakt voor het vak werkplekleren 1.Eerste professionele webproject dat ik zelf gemaakt heb.',
-        image: null
+        jaar: '2026',
+        tekst: 'Portfolio website gemaakt voor het vak werkplekleren 1. Eerste professionele webproject dat ik zelf gemaakt heb.',
+        afbeelding: null
     }
 ];
 
@@ -56,19 +56,19 @@ function generateTimeline(data) {
         infoKaart.classList.add('tijdlijn-infoKaart');
 
         const tijdlijnH3 = document.createElement('h3');
-        tijdlijnH3.textContent = item.year;
+        tijdlijnH3.textContent = item.jaar;
 
         const tijdlijnP = document.createElement('p');
-        tijdlijnP.textContent = item.text;
+        tijdlijnP.textContent = item.tekst;
 
         infoKaart.appendChild(tijdlijnH3);
         infoKaart.appendChild(tijdlijnP);
 
 
-        if (item.image) {
+        if (item.afbeelding) {
             const img = document.createElement('img');
-            img.src = item.image;
-            img.alt = item.year + ' project';
+            img.src = item.afbeelding;
+            img.alt = item.jaar + ' project';
             infoKaart.appendChild(img);
         }
 
